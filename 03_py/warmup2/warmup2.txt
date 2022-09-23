@@ -1,0 +1,61 @@
+def string_bits(str):
+  ret = ''
+  n = 0
+  while n < len(str):
+    ret += str[n]
+    n += 2
+  return ret
+
+def string_splosion(str):
+  ret = ''
+  for n in range(len(str)):
+    for m in range(n + 1):
+      ret += str[m]
+    m = 0
+  return ret
+
+def last2(str):
+  last = str[len(str) - 2: len(str)]
+  n = 0
+  for x in range(len(str) - 2):
+    if str[x: x + 2] == last:
+      n += 1
+  return n
+
+def array_count9(nums):
+  n = 0
+  for x in nums:
+    if x == 9:
+      n += 1
+  return n
+
+def array_front9(nums):
+  if len(nums) < 4: 
+    for x in nums:
+      if x == 9:
+        return True
+  else: 
+    itr = 0
+    while itr < 4: 
+      if nums[itr] == 9: 
+        return True
+      itr += 1
+  return False
+
+def array123(nums):
+  for n in range(len(nums) - 2): 
+    if nums[n] == 1 and nums[n + 1] == 2 and nums[n + 2] == 3: 
+      return True
+  return False
+
+def string_match(a, b):
+  count = 0
+  if len(a) > len(b):
+    for n in range(len(b) - 1): 
+      if b[n:n+2] == a[n:n+2]:
+        count += 1
+  else: 
+    for n in range(len(a) - 1): 
+      if b[n:n+2] == a[n:n+2]:
+        count += 1
+  return count
