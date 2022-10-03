@@ -1,4 +1,3 @@
-
 # Joseph Wu, Purple, Nicole Zhou, Duck
 # SoftDev
 # K06 -- return random weighted by percentage
