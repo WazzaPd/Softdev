@@ -11,3 +11,5 @@ def hello_world():
 
 app.run()
 
+# This will display "No hablo queso" on the web page,
+# but will not print "__main__" in the terminal.
