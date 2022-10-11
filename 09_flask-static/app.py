@@ -1,6 +1,8 @@
-# Clyde 'Thluffy' Sinclair
+# ADJ In The House! :: Joseph Wu, Anna Fang, Diana Akhmedova
 # SoftDev
-# Oct 2022
+# K09 -- Some Things Never Change
+# 2022-10-11
+# time spent: 0.5 hours
 
 # DEMO 
 # basics of /static folder
