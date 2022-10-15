@@ -1,6 +1,8 @@
-# Clyde 'Thluffy' Sinclair
+# ADJ In The House! :: Joseph Wu, Anna Fang, Diana Akhmedova
 # SoftDev
-# Oct 2022
+# K10 -- Just Plug It In
+# 2022-10-13
+# time spent: 0.5 hours
 
 from flask import Flask, render_template #Q0: What will happen if you remove render_template from this line? (log your prediction before you pull the trigger...)
 app = Flask(__name__)
@@ -13,7 +15,7 @@ coll = [0,1,1,2,3,5,8]
 
 @app.route("/my_foist_template") #Q1: Can all of your teammates confidently predict the URL to use to load this page?
 def test_tmplt():
-    return render_template( 'model_tmplt.html', foo="fooooo", collection=coll) #Q2: What is the significance of each argument? Simplest, most concise answer best.
+    return render_template( 'model_tmplt.html', foo="Welcome!", collection=coll) #Q2: What is the significance of each argument? Simplest, most concise answer best.
 
 if __name__ == "__main__":
     app.debug = True
