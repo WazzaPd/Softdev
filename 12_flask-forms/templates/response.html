@@ -1,11 +1,23 @@
+<!-- 
+  Flying Karate Masters: Matthew Yee, Kevin Li, Joseph Wu
+  SoftDev
+  K12 -- Flask Forms + GET vs POST
+  2022-10-17
+  time spent: 0.5 hours
+ -->
 <html>
     <title>
         super cool page for super cool people
     </title>
-
+    Flying Karate Masters: Matthew Yee, Kevin Li, Joseph Wu
     <h1>
         Hello fellow flying karate master
     </h1>
-        Your username is {{username}} <br>
+        Your username is {{username}} 
+        <br>
         Request method is {{method}}
+        <br>
+        <br>
+        The only differences we know of are that GET requests send information to request.args and display the information inputted in the URL, 
+        while POST requests send information to request.form and do not display inputted information in the URL. They seem functionally the same otherwise.
 </html>
