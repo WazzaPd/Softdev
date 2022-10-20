@@ -1,8 +1,8 @@
 Flying Karate Masters: Matthew Yee, Kevin Li, Joseph Wu
 SoftDev
 K13: Stuylin' & Wylin' & Profilin'
-2022-10-18
-time spent: 2 hours
+2022-10-19
+time spent: 0.2 hours
 
 Inline Styling
 <tag></tag>
@@ -46,3 +46,5 @@ External Styling
     type="text/css"
     href="FILENAME">
 </head>
+
+Note: "FILENAME" must contain the route to the CSS file if the CSS file and HTML file are not in the same directory.
