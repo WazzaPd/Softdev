@@ -1,0 +1,12 @@
+Flying Karate Masters: Matthew Yee, Kevin li, Joesph Wu
+SoftDev  
+skeleton/stub :: SQLITE3 BASICS
+2022-10-25
+Hours spent: 1.0 Hours
+
+Notes:
+- Declaring a column as an INTEGER PRIMARY KEY datatype makes it such that each value is unique, but also affects
+the order of the rows in the table.
+  - Lower integers are placed higher on the list, higher values placed at the bottom.
+  - This still works if said integer is inserted into the table as a string.
+- Cursor is an object that allows you to interact with the database through terminal commands in the form of strings.
