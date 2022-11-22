@@ -1,0 +1,17 @@
+Muscular Macho Elephants: Prattay Dey, Joseph Wu 
+Softdev 
+Nov 2022
+
+DISCO:
+- When making an HTTP request using our API key, this pops up on the dev console:
+DevTools failed to load source map: Could not load content for chrome-extension://bmnlcjabgnpnenekpadlanbbkooimhnj/browser-polyfill.js.map: System error: net::ERR_BLOCKED_BY_CLIENT
+
+- When we try to click on the chrome extension that failed to load, it says that the file cannot be found
+
+- One thing to note is that while we got an error msg in the dev console for both macOS and Unix, we're not sure if they are the same error/failure across all operating systems.
+
+QCC:
+- Why can't we use f-strings to enter the api-key into the url? When we tried, it says that the api is not registered even though it is.
+- Why is the "source map" referring to and why is it failing to load?
+- Why is the source map significant?
+- Why does the url change during multiple HTTP requests, even though the image displayed at the urls remains the same?
