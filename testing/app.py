@@ -7,20 +7,12 @@ app = Flask(__name__)
 
 @app.route("/", methods=['GET'])
 def render():
-    url = "https://api.countapi.xyz/hit/ThisIsForMeOnly/key"
+    url = "https://uselessfacts.jsph.pl/random.json?language=en"
     print(url)
     api_call = requests.get(url).json()
-    #print(api_call)
+    print(api_call)
 
-    return render_template('main.html', pressed=api_call['value'])
-
-@app.route("/adding", methods=['GET'])
-def adding():
-    url = "https://api.countapi.xyz/hit/ThisIsForMeOnly/key"
-    print(url)
-    api_call = requests.get(url).json()
-    return render_template('main.html', pressed=api_call['value'])
-
+    return render_template('main.html', explanation=api_call['text'])
 
 if __name__ == "__main__":
     app.debug = True
