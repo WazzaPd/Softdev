@@ -1,0 +1,27 @@
+MuscularMachoElephants :: Joseph Wu, Prattay Dey
+SoftDev
+K23 -- A Day of Noodling
+2022-11-30
+time spent: 1 hours
+
+DISCOS:
+    - With Bootstrap, no need for css anymore. If you want css there is specific words to use inside a tag's class.
+        - Ex: <button class="btn btn-sm btn-outline-primary" type="button">Smaller button</button>
+        - This makes a small blue outline button
+        - Ex: <button class="btn btn btn-success" type="button">Main button</button>
+        - This makes a normal sized green solid-colored button
+        - Ex: <a href="#" class="btn btn-primary stretched-link">See More</a>
+        - This will make the whole card hoverable/clickable and act essentially as a link
+    - The first word in the class is like declaring a type
+        - If it is incorrectly stated, even if the words afterwards is formatted correctly, it will not work
+    - You are able to type giberish and the code will work.
+    - Ex: <button class="btn slfjsojf btn-success" type="button">Main button</button>
+    Will run perfectly however, 
+    <button class="btn slfjsojfbtn-success" type="button">Main button</button>
+    Will run but without btn-success since it makes no sense. It essencially turns into just class="btn".
+
+
+QCCs:
+    - The image of the Moutain is VERY big even though the source img is small. Either bootstrap images or the card class is altering the img pixel size to fit the entire page
+    - It seems like there is going to be alot you need to memorize in order to use bootstrap css effectivly. 
+
