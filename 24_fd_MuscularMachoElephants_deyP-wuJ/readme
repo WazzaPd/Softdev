@@ -8,6 +8,20 @@ DISCO:
 
 QCC:
 
-What are all the div tags for? They are desciptors with what to do with the first div tag.
+Joseph:
+- What are all the div tags for?
+
+Kevin(fd User):
+- They are desciptors with what to do with the first div tag.
 
 The div classes have to be in a specific order to work. 
+
+q0 (Did you have to consult resources beyond your Devo-generated on-ramp? Your answer should be a single binary digit.)
+- Answer: 0
+
+q0b If answer to preceding question is 1, cite all resources consulted – including verbal consultations and/or neighbouring team’s readme. 1citation/line.)
+- Answer: Null
+
+q1 (only to be answered after you have finished… At this point, which FEF do you prefer, and why?)
+- Joseph's answer: Bootstrap becasue desciptors are morre compact(all listed in a single tag's class).
+- Prattay's answer: Foundation seems to have less clutter, citing using cards as an example.
