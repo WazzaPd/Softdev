@@ -1,0 +1,22 @@
+Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
+SoftDev pd0
+K27 -- Basic functions in JavaScript
+2023-04-03t
+
+DISCO
+-----------------------------------------------------------------
+* JavaScript is kinda like java wow
+* to declare a function in js you have to say it's a function
+* if you install node, you don't need to use the dev console, you 
+use the console.log function
+* ...
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* We're a little confused about what scheme's gotta do with js
+
+=================================================================
+
+
+
