@@ -1,0 +1,16 @@
+Team Purple Spikes :: Joseph Wu and Aahan Mehta
+SoftDev pd8
+K28 -- Getting more comfortable with the dev console and the DOM
+2023-04-19
+
+===================================================================
+DISCO:
+-When you first load up an html file, it runs the JavaScript at the
+beginning
+-an anonymous function can be used to make other functions arguments
+-you can edit html by accessing it as a list of tags in js.
+
+QCC:
+-If the html already has a tag, how do we edit its format?
+-why do the blue stripes linger after we call red, shouldn't each item 
+turn red because the loop starts from index 0? 
