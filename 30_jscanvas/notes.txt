@@ -1,0 +1,32 @@
+Team Purple Spikes: Joseph Wu and Aahan Mehta
+SoftDev pd8
+K30 -- canvas based JS drawing
+2023-04-24
+
+QCC:
+- Retrieves an HTML5 canvas element with an id of "slate".
+
+- Instantiates a 2D canvas rendering context object for drawing graphics 
+on the canvas.
+
+- Defines two functions, drawRect and drawCircle, which draw a rectangle 
+and a circle, respectively, on the canvas when the canvas is clicked.
+
+- Defines a toggleMode function that switches between drawing rectangles 
+and circles when called.
+
+- Adds an event listener to the canvas that calls the draw function when 
+the canvas is clicked.
+
+- Adds event listeners to two buttons, one that toggles between rectangle 
+and circle modes and one that clears the canvas.
+
+
+Disco:
+- clientX refers to the horizontal coordinate of the mouse pointer 
+relative to the viewport, which is the visible portion of the webpage. 
+It is measured in pixels from the left edge of the viewport.
+
+- offsetX, on the other hand, refers to the horizontal coordinate of the 
+mouse pointer relative to the target element. It is measured in pixels 
+from the left edge of the target element.

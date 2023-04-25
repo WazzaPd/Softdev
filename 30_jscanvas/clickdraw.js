@@ -11,39 +11,52 @@ var mode = "rect";
 var toggleMode = (e) => {
     console.log("toggling...");
     if (mode === "rect") {
-        mode = "circ"
+        mode = "circ";
     }
     else {
-        mode = "rect"
+        mode = "rect";
     }
 }
 
 var drawRect = function(e) {
-    var mouseX = e.clientX //gets X-coor of mouse when event is fired
-    var mouseY = e.clientY //gets Y-coor of mouse when event is fired
-    console.log("mouseclick registered at ", mouseX, mouseY)
-    ctx.fillRect(mouseX, mouseY, 10, 10)
+    var mouseX = e.offsetX; //gets X-coor of mouse when event is fired
+    var mouseY = e.offsetY; //gets Y-coor of mouse when event is fired
+    console.log("mouseclick registered at ", mouseX, mouseY);
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(mouseX, mouseY, 100, 200)
 }
 
 var drawCircle = (e) => {
-    var mouseX = e.clientX //gets X-coor of mouse when event is fired
-    var mouseY = e.clientY //gets Y-coor of mouse when event is fired
-    console.log("mouseclick registered at ", mouseX, mouseY)
-    ctx.beginPath()
-    ctx.arc(mouseX, mouseY, 10, 0,2 *Math.PI)
-    ctx.stroke()
+    var mouseX = e.offsetX; //gets X-coor of mouse when event is fired
+    var mouseY = e.offsetY; //gets Y-coor of mouse when event is fired
+    console.log("mouseclick registered at ", mouseX, mouseY);
+    ctx.beginPath();
+    ctx.fillStyle = "#FF0000";
+    ctx.arc(mouseX, mouseY, 50, 0,2 *Math.PI);
+    ctx.fillstyle = "red";
+    ctx.fill();
 }
 
 var draw = (e) => {
     if (mode == "rect"){
-        drawRect(e)
+        drawRect(e);
     } else{
-        drawCircle(e)
+        drawCircle(e);
     }
 }
 
 var wipeCanvas = () => {
-    ctx.clearRect(0,0, 600, 600)
+    ctx.clearRect(0,0, 600, 600);
 }
 
-c.addEventListener("click", drawRect) //passes the mouse event as parameter for the function
+c.addEventListener("click", draw) //passes the mouse event as parameter for the function
+var bToggler = document.getElementById("buttonToggle");
+bToggler.addEventListener('click', () =>{
+    toggleMode();
+
+});
+
+var clearB = document.getElementById("buttonClear");
+clearB.addEventListener('click', () =>{
+    wipeCanvas();
+});
