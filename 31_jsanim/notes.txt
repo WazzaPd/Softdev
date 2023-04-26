@@ -1,0 +1,33 @@
+Team Alone: Joseph Wu
+SoftDev pd8
+K31 -- JS Paint, Paint, Paint...
+2023-04-24
+
+QCC:
+
+- The animation is achieved using the requestAnimationFrame() method, which 
+calls the step() function repeatedly to update the animation.
+
+- The step() function calculates the elapsed time since the animation 
+started using the timestamp argument and schedules the next call to step() 
+using requestAnimationFrame().
+
+- The animation is paced using a setTimeout() method with a 50ms delay, which 
+causes the drawDot() function to be called again after 50ms.
+
+- The animation can be stopped using the cancelAnimationFrame() and 
+clearTimeout() methods, which are called from the stopIt() function when the 
+stop button is clicked.
+
+Disco:
+
+- setTimeout() is used to schedule a function to be executed after a specified 
+delay.
+
+- clearTimeout() is used to cancel a previously scheduled timeout.
+
+- The requestAnimationFrame() method is used to create smooth and efficient 
+animations in JavaScript.
+
+- Variables are used to store and update the state of the animation, such as 
+the current radius of the circle and whether it is growing or shrinking.
