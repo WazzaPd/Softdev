@@ -36,7 +36,7 @@ var drawCircle = (radius) => {
 
 var start;
 var lastTime = new Date().getTime();
-var speed = 1; // adjust this to change the animation speed
+var speed = 5; // adjust this to change the animation speed
 
 function step() {
     const now = new Date().getTime();
