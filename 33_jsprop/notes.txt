@@ -1,0 +1,26 @@
+Team DNJ :: Joseph Wu, Nakib Abedin, David Chen
+SoftDev pd8
+K30 -- Getting more comfortable with the dev console and the DOM
+2023-04-25
+
+===================================================================
+QCC:
+1. predict: We will have a table of names and be able to click them
+1. observe: We have a table of names. Click on one and get an alert. contents of alert = name you clicked on
+
+2. td = individual names. tr = table row. table = whole table. click and get alert. click on tr get row of names. click table get entire table of names
+2. click on name, get name, then row with raw html, then table with raw html as alerts.
+
+3. //Q: What will happen when next line is uncommented?
+   //e.stopPropagation();
+   Predict: The alert will no longer pop up. Stops the flow of events
+   Observe: individual and row did not pop up, only table
+
+   //Q: What effect does the boolean arg have?
+   //table.addEventListener('click', clicky, false);
+   Predict: The table alert will no longer pop up. The true was allowing it to bypass stopPropagation()
+   Observe: Table no longer pops up. Individual name pops up.
+
+   // Q: When user clicks on a cell, in what order will the pop-ups appear?
+   td, tr, table
+
