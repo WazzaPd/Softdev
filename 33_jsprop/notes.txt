@@ -21,6 +21,21 @@ QCC:
    Predict: The table alert will no longer pop up. The true was allowing it to bypass stopPropagation()
    Observe: Table no longer pops up. Individual name pops up.
 
-   // Q: When user clicks on a cell, in what order will the pop-ups appear?
-   td, tr, table
+   comment: stopPropagation stops the event from propagating any more than the current. True causes events to be triggered during capture phase
 
+   // Q: When user clicks on a cell, in what order will the pop-ups appear?
+   if table event is true:
+      - Table
+      - Tr
+      - Td
+   else:
+      - Td
+      - Tr
+      - Table
+
+4. //Q: Does the order in which the event listeners are attached matter?
+   //A: No it doesn't matter
+
+   //Q: What effect does the boolean arg have in each?
+   //   (Leave exactly 1 version uncommented to test...)
+   A: the True causes the event to trigger in the capture phase and the false casuses the event to trigger in the bubble phase.
